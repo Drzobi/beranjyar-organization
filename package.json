@@ -1,0 +1,44 @@
+{
+  "name": "beranjyar",
+  "version": "1.0.0",
+  "description": "پلتفرم هوشمند و سرگرم‌کننده برنج‌یار",
+  "main": "backend/server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon backend/server.js",
+    "start": "node backend/server.js",
+    "build:apk": "cd mobile && npx cap sync android && cd android && ./gradlew assembleDebug",
+    "build:pwa": "echo 'PWA build - coming soon'",
+    "test": "echo 'Tests coming soon'"
+  },
+  "keywords": [
+    "beranjyar",
+    "rice",
+    "farming",
+    "game",
+    "telegram",
+    "ai",
+    "gemini"
+  ],
+  "author": "BeranjYar Team",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2",
+    "dotenv": "^16.4.5",
+    "cors": "^2.8.5",
+    "@google/generative-ai": "^0.11.0",
+    "jsonwebtoken": "^9.0.2",
+    "bcryptjs": "^2.4.3",
+    "sqlite3": "^5.1.7",
+    "better-sqlite3": "^11.0.0",
+    "@capacitor/core": "^6.0.0",
+    "@capacitor/android": "^6.0.0",
+    "@capacitor/cli": "^6.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
